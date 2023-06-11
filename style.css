@@ -12,9 +12,10 @@
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-gray1: #dbe1e8;
+  --color-red: #CD1818;
   --color-gray2: #454e56;
   --color-gray3: #6c7983;
-  --color-gray4: #4E3636;
+  --color-gray4: #dbe1e8;
   --color-gray5: #2a2e35;
   --color-geay6: #12181b;
   --br-sm-2: 14px;
@@ -44,6 +45,7 @@ body {
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
+
 
 a {
   display: inline-block;
@@ -178,6 +180,10 @@ section {
 }
 
 /*header-content*/
+
+.sym{
+  color: var(--color-red) ;
+}
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -242,8 +248,11 @@ section {
 }
 .about-container .right-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
+  margin-left: 12rem;
+  width: 300px;
+    align-items: baseline;
 }
 .about-container .right-about .about-item {
   border: 1px solid var(--color-gray5);
@@ -268,7 +277,7 @@ section {
   color: var(--color-secondary);
 }
 .about-container .right-about .about-item .abt-text .small-text {
-  padding-left: 3rem;
+  padding-left: 7rem;
   position: absolute;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -283,9 +292,7 @@ section {
   height: 2px;
   background-color: var(--color-gray5);
 }
-.about-container .left-about {
-  padding-right: 5rem;
-}
+
 .about-container .left-about p {
   line-height: 2rem;
   padding: 1rem;
@@ -364,7 +371,7 @@ section {
   left: 50%;
   top: 0;
   width: 40%;
-  height: 1px;
+  height: 2px;
   background-color: var(--color-gray5);
   transform: translateX(-50%);
 }
@@ -640,13 +647,14 @@ section {
 }
 .contact-content .right-contact .submit-btn {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .contact-content .right-contact button {
   background-color: var(--color-gray5);
   margin-left: 1.5rem;
   border-radius: 30px;
-  width: 100%;
+  font-family: inherit;
+  width: 45%;
   color: var(--color-white);
   font-size: inherit;
   border: none;
@@ -753,6 +761,7 @@ section {
   .about-container .right-about {
     grid-template-columns: 1fr;
     padding-top: 2.5rem;
+    margin-left: 0px;
   }
   .about-container .left-about {
     padding-right: 0;
@@ -773,7 +782,11 @@ section {
   }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
+    padding-bottom: 17rem;
+    grid-gap: 14rem;
+  }
+  .sec5{
+    padding: 6rem 2.5rem !important;
   }
   .contact-content {
     flex-direction: column;
@@ -788,6 +801,23 @@ section {
   .contact-content .right-contact .i-c-2 :last-child {
     margin-top: 1.5rem;
     margin-left: 0;
+  }
+  .contact-content .left-contact .contact-icon{
+    justify-content: center;
+  }
+  .contact-content .left-contact h4{
+    text-align: center;
+  }
+  .contact-content .left-contact .contact-info .contact-item {
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .main-btn{
+   width: 187px;
+  }
+  .main-btn .btn-text{
+    padding: 0px 1.2rem;
   }
   .main-title h2 {
     font-size: 2rem;
